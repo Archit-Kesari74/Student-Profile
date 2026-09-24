@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portal</title>
+    <style>
+        body{
+            background-color: rgb(255,255,255);
+            margin : 0px;
+            }
+
+        h1 {
+            background-color: black;
+            color: rgb(252, 253, 253);
+            text-align: center;
+            font-family:'Times New Roman', Times, serif;
+            font-size: 50px;
+            padding: 10px;
+            margin: 0px;
+        }
+
+        .links {
+            background-color: rgb(255, 191, 0);
+            white-space: pre;
+            display: flex;
+            font-size: 18px;
+            justify-content: space-around;
+            list-style-type: none;
+            font-weight: bold;
+            margin: 0px;
+            height: 30px;
+            border: 2px solid black;
+            padding: 7px;
+        }
+
+        a:hover{
+            font-size: 19px;
+            background-color: rgb(242, 182, 1);
+        }
+
+        a{
+            text-decoration: none;
+            color: black;
+        }
+
+        h2 {
+            color: darkgreen;
+            text-align: center;
+            font-size: 30px;
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-weight:50;
+        }
+
+        .highlight {
+            color: green;
+        }
+
+        #student-name {
+            color: darkcyan;
+        }
+
+        .badge {
+            color: white;
+            background-color: darkolivegreen;
+        }
+
+        .weekly_schedule{
+            border-style: solid;
+            margin-left: auto;
+            margin-right: auto;
+            width: 70%;
+            height: 200px;
+        }
+
+        .weekly_schedule th{
+            padding: 18px;
+            font-size: 22px;
+            border: 1px solid ;
+            color: white;
+            background-color: rgb(45, 100, 249);
+        }
+
+        .weekly_schedule td{
+            padding: 18px;
+            font-size: 20px;
+            border: 1px solid;
+        }
+
+        .student_profile{
+            border-style: solid;
+            margin-left: auto;
+            margin-right: auto;
+            width: 70%;
+            height: 200px;
+        }
+
+        .student_profile th{
+            padding: 18px;
+            font-size: 22px;
+            border: 1px solid ;
+            color: white;
+            background-color: rgb(48, 100, 244);
+        }
+
+        .student_profile td{
+            padding: 18px;
+            font-size: 20px;
+            border: 1px solid;
+        }
+
+        .my_skills{
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        .my_skills li{
+            border : 2px solid;
+            padding : 18px;
+            padding-left: 30px;
+            padding-right: 30px;
+            border-radius: 8px;
+            font-size: 18px;
+            margin: 10px;
+        }
+
+        #headcf{
+            text-align: center;
+            font-size: 50px;
+        }
+
+        .course_form{
+            font-size: 20px;
+            margin-left: 30px;
+        }
+
+        #name{
+            width: 70%;
+            height: 25px;
+            margin-left: 39px;
+        }
+
+        #email{
+             width: 70%;
+            height: 25px;
+            margin-left: 39px;
+        }
+
+        #id{
+            width: 70%;
+            height: 25px;
+        }
+        
+        #submit{
+            background-color: rgb(49, 58, 228);
+            color: #f5f5f5;
+            padding: 10px;
+            padding-left: 25px;
+            padding-right: 25px;
+            font-size: 18px;
+            border-width: 2px;
+            border-style: solid;
+            border-color: black;
+            cursor: pointer;
+            width: 900px;
+            height: 50px;
+            margin: 0px;
+            align-items: center;
+            border-top-right-radius: 10px;
+            border-top-left-radius: 10px;
+        
+        }
+
+        #submit:hover{
+            background-color: rgb(19, 64, 178);
+        }
+
+        #reset:hover{
+            background-color: rgb(234, 232, 232);
+        }
+
+        #reset{
+            background-color: white;
+            color: black;
+            padding: 10px;
+            padding-left: 25px;
+            padding-right: 25px;
+            font-size: 18px;
+            border-width: 2px;
+            border-style: solid;
+            border-color: black;
+            cursor: pointer;
+            width: 900px;
+            height: 50px;
+            margin: 0px;
+            align-items: center;
+            border-bottom-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Student Portal</h1>
+        <nav>
+            <ul class="links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Student Profile</h2>
+            <table class="student_profile">
+                <tr>
+                    <th>Field</th>
+                    <th>Value</th>
+                </tr>
+                <tr>
+                    <td>Name</td>
+                    <td class="highlight">Rahul Sharma <span class="badge" style="font-size:12px;">Top Performer</span></td>
+                </tr>
+                <tr>
+                    <td>Student ID</td>
+                    <td>24BCE1001</td>
+                </tr>
+                <tr>
+                    <td>Program</td>
+                    <td class="highlight">Computer Science</td>
+                </tr>
+                <tr>
+                    <td>Year</td>
+                    <td>1st Year</td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td>rahul@example.com</td>
+                </tr>
+            </table>
+        </section>
+        <br><br>
+        <section>
+            <h2>My Skills</h2>
+            <ul  class="my_skills">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Python</li>
+                <li>Git</li>
+            </ul>
+            <br><br><br>
+        </section>
+        <section >
+            <h2>Weekly Schedule</h2>
+            <table class="weekly_schedule">
+                <tr>
+                    <th>Day</th>
+                    <th>9:00AM</th>
+                    <th>11:00 AM</th>
+                    <th>2:00 PM</th>
+                </tr>
+                <tr>
+                    <td>Monday</td>
+                    <td>HTML</td>
+                    <td>Mathematics</td>
+                    <td>DSA</td>
+                </tr>
+                <tr>
+                    <td>Tueday</td>
+                    <td>CSS</td>
+                    <td>DBMS</td>
+                    <td>English</td>
+                </tr>
+                <tr>
+                    <td>Wednesday</td>
+                    <td>JavaScript</td>
+                    <td>Mathematics</td>
+                    <td>DSA</td>
+                </tr>
+                <tr>
+                    <td>Thursday</td>
+                    <td>HTML</td>
+                    <td>DBMS</td>
+                    <td>Project</td>
+                </tr>
+                <tr>
+                    <td>Friday</td>
+                    <td>CSS</td>
+                    <td>Workshop</td>
+                    <td>DSA</td>
+                </tr>
+            </table>
+        </section>
+        <section>
+            <h2 id="headcf">Course Registration</h2>
+            <form class="course_form">
+                <h3 id="student-name">Student Information</h3>
+                <label for="name">
+                    Name 
+                    <input type="text" id="name" required>
+                </label>
+                <br>
+                <label for="email">
+                    Email 
+                    <input type="email" id="email" required>
+                </label>
+                <br>
+                <label for="id">
+                    Student ID 
+                    <input type="text" id="id" required>
+                </label>
+                
+                <h3>Course Selection</h3>
+                <label for="courses">
+                    <select id="courses">
+                        <option disabled selected hidden>Select Course</option>
+                        <option>HTML & CSS</option>
+                        <option>JavaScript</option>
+                        <option>Python</option>
+                        <option>Data Structure</option>
+                        <option>Database Management</option>
+                    </select>
+                </label>
+
+                <h3>Prefered Learning Mode</h3>
+                <label for="Online">
+                <input type="radio" name="mode" id="Online">Online
+                </label>
+                <label for="Offline">
+                <input type="radio" name="mode" id="Offline">Offline
+                </label>
+
+                <h3>Skills You Already Know</h3>
+
+                <label for="HTML">
+                <input type="checkbox" class="skills_known" id="HTML">HTML 
+                </label>
+                <label for="CSS">
+                <input type="checkbox" class="skills_known" id="CSS">CSS  
+                </label>
+                <label for="JavaScript">
+                <input type="checkbox" class="skills_known" id="JavaScript">JavaScript  
+                </label>
+                <label for="Python">
+                <input type="checkbox" class="skills_known" id="Python">Python <br><br>
+                </label>
+
+                <label for="submit">
+                <button type="submit" value="Submit" id="submit">Submit</button>
+                </label>
+                <br>
+                <label for="reset">
+                <button type="reset" value="Reset" id="reset">Reset</button>
+                </label>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
